@@ -6,41 +6,34 @@
 			<Slider x:Name="throttleSlider"
 				Minimum="0"
 				Maximum="255"
-				HorizontalOptions="FillAndExpand"
-				/>
+				HorizontalOptions="FillAndExpand"/>
 			
 			<Label Text="roll"/>
 			<Slider x:Name="rollSlider"
 				Minimum="-50"
 				Maximum="50"
-				HorizontalOptions="FillAndExpand"
-				/>
+				HorizontalOptions="FillAndExpand"/>
 			<Button x:Name="rollZeroButton"
 				Text="Set roll 0"
-				HorizontalOptions="Center"
-				/>
+				HorizontalOptions="Center"/>
 
 			<Label Text="pitch"/>
 			<Slider x:Name="pitchSlider"
 				Minimum="-50"
 				Maximum="50"
-				HorizontalOptions="FillAndExpand"
-				/>
+				HorizontalOptions="FillAndExpand"/>
 			<Button x:Name="pitchZeroButton"
 				Text="Set roll 0"
-				HorizontalOptions="Center"
-				/>
+				HorizontalOptions="Center"/>
 
 			<Label Text="yaw"/>
 			<Slider x:Name="yawSlider"
 				Minimum="-50"
 				Maximum="50"
-				HorizontalOptions="FillAndExpand"
-				/>
+				HorizontalOptions="FillAndExpand"/>
 			<Button x:Name="yawZeroButton"
 				Text="Set roll 0"
-				HorizontalOptions="Center"
-				/>
+				HorizontalOptions="Center"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

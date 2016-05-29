@@ -107,8 +107,6 @@ namespace DroneController
 		}
 	}
 
-
-
 	class TimeOutSocket{
 		private static bool IsConnectionSuccessful = false;
 		private static Exception socketexception;

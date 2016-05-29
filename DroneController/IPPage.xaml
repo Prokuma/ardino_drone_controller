@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DroneController.IPPage">
+	<ContentPage.Content>
+	<StackLayout VerticalOptions="Center">
+		<Entry x:Name="IPEntry"
+			Placeholder="Drone IP"
+			VerticalOptions="Center"
+			HorizontalOptions="FillAndExpand"/>
+		<Button x:Name="connectButton"
+			Text="Connect"
+			VerticalOptions="Center"
+			HorizontalOptions="Center"/>
+		<Label x:Name="stateLabel"
+			Text="Please Connect to Drone!"
+			VerticalOptions="Center"
+			HorizontalOptions="Center"/>
+	</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -17,9 +17,9 @@ namespace DroneController
 		NavigationPage navigationPage;
 
 		int throttleValue = 0;
-		int rollValue = 0;
-		int pitchValue = 0;
-		int yawValue = 0;
+		int rollValue = 50;
+		int pitchValue = 50;
+		int yawValue = 50;
 
 		public App ()
 		{
@@ -42,12 +42,12 @@ namespace DroneController
 		}
 
 		private void OnThrottleValueChanged(object sender,  ValueChangedEventArgs e){throttleValue = (int)e.NewValue;SendData();}
-		private void OnRollValueChanged(object sender,  ValueChangedEventArgs e){rollValue = (int)e.NewValue;SendData();}
-		private void OnPitchValueChanged(object sender,  ValueChangedEventArgs e){pitchValue = (int)e.NewValue;SendData();}
-		private void OnYawValueChanged(object sender,  ValueChangedEventArgs e){yawValue = (int)e.NewValue;SendData();}
-		private void OnRollZeroClicked(object sender, EventArgs e){rollValue = 0;controllerPage.rollSliderO.Value = 0;SendData();}
-		private void OnPitchZeroClicked(object sender, EventArgs e){pitchValue = 0;controllerPage.pitchSliderO.Value = 0;SendData();}
-		private void OnYawZeroClicked(object sender, EventArgs e){yawValue = 0;controllerPage.yawSliderO.Value = 0;SendData();}
+		private void OnRollValueChanged(object sender,  ValueChangedEventArgs e){rollValue = (int)e.NewValue ;SendData ();}
+		private void OnPitchValueChanged(object sender,  ValueChangedEventArgs e){pitchValue = (int)e.NewValue ;SendData ();}
+		private void OnYawValueChanged(object sender,  ValueChangedEventArgs e){yawValue = (int)e.NewValue ;SendData ();}
+		private void OnRollZeroClicked(object sender, EventArgs e){rollValue = 50;controllerPage.rollSliderO.Value = 50;SendData();}
+		private void OnPitchZeroClicked(object sender, EventArgs e){pitchValue = 50;controllerPage.pitchSliderO.Value = 50;SendData();}
+		private void OnYawZeroClicked(object sender, EventArgs e){yawValue = 50;controllerPage.yawSliderO.Value = 50;SendData();}
 
 		protected override void OnStart () {
 			// Handle when your app starts

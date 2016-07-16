@@ -31,6 +31,10 @@ namespace DroneController
 			this.pitchSliderO = pitchSlider;
 			this.yawSliderO = yawSlider;
 
+			this.rollSliderO.Value = 50;
+			this.pitchSliderO.Value = 50;
+			this.yawSlider.Value = 50;
+
 			this.rollZeroButtonO = rollZeroButton;
 			this.pitchZeroButtonO = pitchZeroButton;
 			this.yawZeroButtonO = yawZeroButton;

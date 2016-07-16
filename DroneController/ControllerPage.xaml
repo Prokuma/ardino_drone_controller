@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DroneController.ControllerPage">
 	<ContentPage.Content>
-		<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+		<StackLayout VerticalOptions="Center">
 			<Label Text="throttle"/>
 			<Slider x:Name="throttleSlider"
 				Minimum="0"
@@ -10,30 +10,30 @@
 			
 			<Label Text="roll"/>
 			<Slider x:Name="rollSlider"
-				Minimum="-50"
-				Maximum="50"
-				HorizontalOptions="FillAndExpand"/>
+				Minimum="0"
+				Maximum="100"
+				HorizontalOptions="Fill"/>
 			<Button x:Name="rollZeroButton"
 				Text="Set roll 0"
-				HorizontalOptions="Center"/>
+				HorizontalOptions="FillAndExpand"/>
 
 			<Label Text="pitch"/>
 			<Slider x:Name="pitchSlider"
-				Minimum="-50"
-				Maximum="50"
-				HorizontalOptions="FillAndExpand"/>
+				Minimum="0"
+				Maximum="100"
+				HorizontalOptions="Fill"/>
 			<Button x:Name="pitchZeroButton"
 				Text="Set roll 0"
-				HorizontalOptions="Center"/>
+				HorizontalOptions="FillAndExpand"/>
 
 			<Label Text="yaw"/>
 			<Slider x:Name="yawSlider"
-				Minimum="-50"
-				Maximum="50"
-				HorizontalOptions="FillAndExpand"/>
+				Minimum="0"
+				Maximum="100"
+				HorizontalOptions="Fill"/>
 			<Button x:Name="yawZeroButton"
 				Text="Set roll 0"
-				HorizontalOptions="Center"/>
+				HorizontalOptions="FillAndExpand"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
